@@ -35,6 +35,7 @@ header nav a:hover {
 
 /* Main Content Area */
 main {
+    visibility: hidden; /* Initially hidden to prevent flicker */
     width: 90%;
     max-width: 800px;
     margin: 2rem auto;

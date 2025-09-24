@@ -35,6 +35,10 @@ document.addEventListener('DOMContentLoaded', () => {
             .catch(error => {
                 console.error('Error loading header:', error);
                 headerPlaceholder.innerHTML = '<p style="color: red;">Error: Could not load header.</p>';
+            })
+            .finally(() => {
+                // Make the main content visible after header loading attempt
+                document.querySelector('main').style.visibility = 'visible';
             });
     }
 
